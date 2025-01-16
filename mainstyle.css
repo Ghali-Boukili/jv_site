@@ -48,7 +48,8 @@ body{
 	color:lightgreen;
 	font-family: 'Press Start 2P', cursive;
 	overflow:scroll;
-	padding: 20px
+	padding: 20px 
+	/* padding : rep de A */
 }
 
 #haut{}
