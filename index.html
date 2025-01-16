@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta/>
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+	</style>
+
+  <link rel="stylesheet" href="css/mainstyle.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <script type="text/javascript" src="js/demarrage.js">
+  </script>
+  <script type="text/javascript" src="js/mouvement.js">
+  </script>
+  <script type="text/javascript" src="js/narration.js">
+  </script>
+  <script type="text/javascript" src="js/gestionDesObjets.js">
+  </script>
+
+</head>
+
+<body onkeypress="/*question I*/mouvement(event);">
+
+<div id="container">
+<div id="header">
+	<h1 id="titreJeu">
+	LA FOLLE HISTOIRE DE L'ESPACE
+	</h1>
+
+	<div id="startButton" onclick="nouveauJeu(0,-1000);">
+	START
+	</div>
+
+</div>
+
+<div id="content">
+	<!-- Haut -->
+	<div id="haut">
+	<div id="flecheHaut">
+		<img width="50px" height="50px" src="images/fleche_haut.png"/>
+	</div>
+	</div>
+
+	<!-- Espace de Jeu et Objets -->
+	<div id="fenetreDeJeu" >
+
+	<div id="fond">
+		<!-- Image de fond -->
+		<img src="images/fond.png"/>
+
+		<!-- Objets clicables-->
+		<!-- Objets emportables-->
+		<img  class="objet" id="bidon" src="images/bidon.png"  onclick="emporter(this);" />
+		<img  class="objet" id="lettre" src="images/lettre.png" onclick="emporter(this);" />
+		<img  class="objet" id="triboule" src="images/triboule.png" onclick="emporter(this);" />
+		<img  class="objet" id="fleur" src="images/fleur.png" onclick="emporter(this);" />
+		<img  class="objet" id="or" src="images/or.png" onclick="emporter(this);" />
+		<img  class="objet" id="bidon" src="images/bidon.png" onclick="emporter(this);" />
+		<img  class="objet" id="cle" src="images/cle.png" onclick="emporter(this);" />
+
+		<!-- Objets activables -->
+		<img  class="objet" id="cacahouette" src="images/cacahouette.png" onclick="activer(this);" />
+		<img  class="objet" id="carte" src="images/carte.png" onclick="activer(this);" />
+		<img  class="objet" id="velo" src="images/velo.png" onclick="activer(this);" />
+
+		<img  class="objet" id="des" src="images/des.png" onclick="emporter(this);" />
+
+
+		<!-- Objets neutres -->
+		<img  class="objet" id="direction" src="images/direction.png"  />
+		<img  class="objet" id="et" src="images/et.png"  />
+		<img  class="objet" id="guichet" src="images/guichet.png" />
+		<img  class="objet" id="coffre" src="images/coffre.png" />
+		<img  class="objet" id="planete" src="images/planete.png" />
+		<img  class="objet" id="pompe" src="images/pompe.png" />
+
+
+		<!-- Vaisseaux -->
+		<img  class="vaisseau" id="vaisseau1" src="images/vaisseau.png" />
+		<img  class="vaisseau" id="vaisseau2" src="images/vaisseau.png" />
+		<img  class="vaisseau" id="vaisseau3" src="images/vaisseau.png" />
+		<img  class="vaisseau" id="vaisseau4" src="images/vaisseau.png" />
+		<img  class="vaisseau" id="vaisseau5" src="images/vaisseau.png" />
+		<img  class="vaisseau" id="vaisseau6" src="images/vaisseau.png" />
+		<img  class="vaisseau" id="vaisseau7" src="images/vaisseau.png" />
+
+	</div>
+	</div> <!-- fin fenêtre de jeu-->
+
+	<!-- Fleche de déplacement -->
+	<div id="flecheDroite" >
+		<img width="50px" height="50px" src="images/fleche_droite.png"/>
+	</div>
+	<div id="flecheGauche" >
+		<img width="50px" height="50px" src="images/fleche_gauche.png"/>
+	</div>
+
+	<!-- Pocket -->
+	<div id="pocket" ondblclick="utiliser(this);">
+		<img id="pocketimg" hidden="hidden"/>
+	</div>
+
+	<!-- Narration -->
+	<div id="fenetreDeNarration">
+	Cliquez sur START pour commencer.
+	</div>
+
+	<!-- Règle du jeu -->
+</div>
+</div> <!-- Fin du container principal-->
+
+</body>
+</html>

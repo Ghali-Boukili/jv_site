@@ -1,0 +1,314 @@
+body{
+	background-color:green;
+}
+
+#container{
+	position:relative;
+	width:800px;
+	background-color:darkgreen;
+
+}
+
+
+
+#content{
+	position:relative;
+	margin-top:10px;
+	display:block;
+	width:800px;
+
+}
+
+#header{
+	display:block;
+	position:relative;
+	width:800px;
+}
+
+#startButton{
+
+}
+
+
+#titreJeu{
+}
+
+
+#fenetreDeNarration{
+	width:750px;
+	height:150px;
+	overflow:hidden;
+	display:block;
+
+	position:absolute;
+	top:710px;
+	left:30px;
+
+	background-color:black;
+	color:lightgreen;
+	font-family: 'Press Start 2P', cursive;
+	overflow:scroll;
+}
+
+#haut{}
+
+
+
+#fenetreDeJeu {
+	width:500px;
+	height:500px;
+	overflow:hidden;
+	display:block;
+	position:absolute;
+	top:100px;
+	left:100px;
+	background-color:yellow;
+	border-color:white;
+	border:solid 6px;
+}
+
+#fond {
+	width:1500px;
+	height:1500px;
+	position:absolute;
+	left:-1500;
+	top:0;
+	display:none;
+}
+
+#flecheDroite{
+	width:50px;
+	height:50px;
+	display:block;
+	background-color:yellow;
+	position:absolute;
+	top:325px;
+	left:630px;
+	display:none;
+}
+
+
+#flecheHaut{
+	width:50px;
+	height:50px;
+	display:block;
+	background-color:yellow;
+	position:absolute;
+	top:30px;
+	left:325px;
+	display:none;
+}
+
+#flecheGauche{
+	width:50px;
+	height:50px;
+	display:block;
+	background-color:yellow;
+	position:absolute;
+	top:325px;
+	left:30px;
+	display:none;
+}
+
+.objet{
+	width:150px;
+	height:150px;
+	display:block;
+
+}
+
+#pocketimg{
+	width:100px;
+	height:100px;
+
+}
+
+#cle, #bidon, #cacahouette, #carte, #cle, #des, #direction, #et, #lettre, #triboule, #velo, #fleur, #guichet, #or, #planete, #coffre, #or, #pompe {
+	position:absolute;
+}
+
+
+
+/* Objet au premier niveau*/
+/* top est entre 1000 et 1500 */
+
+/* Case de gauche */
+/* left est entre 0 et 500 */
+
+#fleur{
+	top: 1146px;
+	left: 19px;
+}
+
+#or{
+	top: 1327px;
+	left: 278px;
+}
+
+
+
+/* Case centrale */
+/* left est entre 500 et 1000 */
+#cle {
+	top: 1328px;
+	left: 782px;
+}
+#guichet {
+	top: 1016px;
+	left: 655px;
+	width: 266px;
+	height: 266px;
+}
+/* Case de droite */
+/* top est entre 1000 et 1500 */
+
+/* Objet au deuxième niveau*/
+/* top est entre 500 et 1000 */
+
+/* Case de gauche */
+/* left est entre 0 et 500 */
+#cacahouette {
+	top: 651px;
+	left: 41px;
+}
+
+#triboule {
+	top: 502px; /*Ici le triboule est ancré un peu plus haut*/
+	left: 221px;
+}
+
+#carte {
+	top: 836px;
+	left: 119px;
+}
+/* Case centrale */
+/* left est entre 500 et 1000 */
+#planete{
+	top: 836px;
+	left: 785px;
+}
+#bidon{
+	top: 569px;
+	left: 755px;
+}
+/* Case de droite */
+/* left est entre 1000 et 1500 */
+#direction {
+	top: 710px;
+	left: 1300px;
+}
+/* Objet au troisième niveau*/
+/* top est entre 0 et 500 */
+
+/* Case de gauche */
+/* left est entre 0 et 500 */
+#velo {
+	top: 85px;
+	left: 87px;
+}
+
+#des {
+	top: 266px;
+	left: 269px;
+}
+
+/* Case centrale */
+/* left est entre 500 et 1000 */
+#pompe {
+	top: 306px;
+	left: 841px;
+}
+#lettre {
+	top: 270px;
+	left: 600px;
+}
+
+/* Case de droite */
+/* top est entre 1000 et 1500 */
+#et {
+	top: 43px;
+	left: 1043px;
+}
+#coffre {
+	top: 39px;
+	left: 1209px;
+	width: 205px;
+	height: 205px;
+}
+
+
+/* Vaisseau */
+.vaisseau {
+	position:absolute;
+	width: 170px;
+	height: 170px;
+	display: block;
+}
+
+/* au premier niveau*/
+/* top est entre 1000 et 1500 */
+/* Case de droite */
+/* top est entre 1000 et 1500 */
+#vaisseau1{
+	top: 1177px;
+	left: 1160px;
+}
+
+/* au deuxième niveau*/
+/* top est entre 500 et 1000 */
+/* Case de gauche */
+/* left est entre 0 et 500 */
+#vaisseau4{
+	top: 683px;
+	left: 300px;
+}
+
+/* Case centrale */
+/* left est entre 500 et 1000 */
+#vaisseau3{
+	top: 722px;
+	left: 586px;
+}
+
+/* Case de droite */
+/* left est entre 1000 et 1500 */
+#vaisseau2{
+	top: 800px;
+	left: 1096px;
+}
+
+/* au troisième niveau*/
+/* top est entre 0 et 500 */
+#vaisseau7{
+	top: 27px;
+	left: 295px;
+}
+
+/* Case centrale */
+/* left est entre 500 et 1000 */
+#vaisseau5{
+	top: 33px;
+	left: 561px;
+}
+
+/* Case de droite */
+/* left est entre 1000 et 1500 */
+#vaisseau6{
+	top: 200px;
+	left: 1082px;
+}
+
+
+#pocket{
+	width:100px;
+	height:100px;
+	top:460px;
+	left:650px;
+	background-color:purple;
+
+	position:absolute;
+	border-radius: 10px 10px 49px 48px;
+	-moz-border-radius: 10px 10px 49px 48px;
+	-webkit-border-radius: 10px 10px 49px 48px;
+	border: 8px dashed #daebe2;
+}
